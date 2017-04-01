@@ -1,4 +1,5 @@
 # ReadMe   
+快速集成微信QQ微博分享
 ## 集成步骤
 可参考 : [[XMShareModule]](https://github.com/xumeng/XMShareModule)	
 ## 注意事项
