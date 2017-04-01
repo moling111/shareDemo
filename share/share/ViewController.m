@@ -35,7 +35,6 @@
     shareView.shareTitle = @"百度一下";
     shareView.shareLink = @"http://www.baidu.com";
     shareView.shareDesc = @"百度一下";
-    //    shareView.defaultLocalImage = [UIImage imageNamed:@"share_circle"];
 }
 
 
