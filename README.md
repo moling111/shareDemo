@@ -1,14 +1,14 @@
-#ReadMe   
+# ReadMe   
 =========
-##集成步骤
+## 集成步骤
 -------    
 可参考 : [[XMShareModule]](https://github.com/xumeng/XMShareModule)	
 
-##注意事项
+## 注意事项
 -------
 *程序 —— Targets —— Build Settings —— Linking —— Other Linker Flag 添加 `-ObjC-all_load`
 
-*分享代码如下   <br>
+*分享代码如下 
 ---------
 
 ```
@@ -27,8 +27,7 @@
 }   
 ```
 
-### 处理回调结果         
-
+## 处理回调结果         
 -------      
 
 ```
