@@ -1,6 +1,7 @@
 # ReadMe   
 快速集成微信QQ微博分享
-	
+## 快速集成
+具体可参考： [[XMShareModule]](https://github.com/xumeng/XMShareModule)
 ## 注意事项
 
 *程序 —— Targets —— Build Settings —— Linking —— Other Linker Flag 添加 `-ObjC-all_load`
