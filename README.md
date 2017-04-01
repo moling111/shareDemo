@@ -1,15 +1,11 @@
 # ReadMe   
-=========
 ## 集成步骤
--------    
 可参考 : [[XMShareModule]](https://github.com/xumeng/XMShareModule)	
-
 ## 注意事项
--------
+
 *程序 —— Targets —— Build Settings —— Linking —— Other Linker Flag 添加 `-ObjC-all_load`
 
-*分享代码如下 
----------
+## 分享代码如下 
 
 ```
 -(void)didCancelShareAtShareView:(GJShareView *)shareView
@@ -27,8 +23,7 @@
 }   
 ```
 
-## 处理回调结果         
--------      
+## 处理回调结果              
 
 ```
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -64,7 +59,6 @@
 
 ```
 ###显示效果如下 
----------
 
 ![](https://github.com/moling111/shareDemo/blob/master/share/CC81725D9E71AFDF410BC8D6382E7FBF.png)
 
