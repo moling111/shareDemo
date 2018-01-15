@@ -486,7 +486,7 @@
 				TargetAttributes = {
 					D76851FD1E8BA9A6004DC588 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J7TKHU84C7;
+						DevelopmentTeam = 3M87JR4E5U;
 						ProvisioningStyle = Manual;
 					};
 					D76852161E8BA9A6004DC588 = {
@@ -722,7 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J7TKHU84C7;
+				DEVELOPMENT_TEAM = 3M87JR4E5U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/share/Share/Lib/Tencent",
@@ -741,10 +741,10 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drx.ClientAnLiWen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koudailicai.group;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "194fcb4f-998e-439b-8666-778c5e8dc663";
-				PROVISIONING_PROFILE_SPECIFIER = ClientAnLiWen_DEV_20160819;
+				PROVISIONING_PROFILE = "3b97acfe-8e37-43e7-b83b-1a32541f5211";
+				PROVISIONING_PROFILE_SPECIFIER = grouptest1;
 			};
 			name = Debug;
 		};
@@ -752,8 +752,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = J7TKHU84C7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3M87JR4E5U;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/share/Share/Lib/Tencent",
@@ -772,10 +772,10 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drx.ClientAnLiWen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koudailicai.group;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3f75e642-3dce-48c7-998f-b4073a669334";
-				PROVISIONING_PROFILE_SPECIFIER = ClientAnLiWen_DIS_20160819;
+				PROVISIONING_PROFILE = "3b97acfe-8e37-43e7-b83b-1a32541f5211";
+				PROVISIONING_PROFILE_SPECIFIER = grouptest1;
 			};
 			name = Release;
 		};

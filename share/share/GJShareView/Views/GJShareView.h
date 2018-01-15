@@ -7,28 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class GJShareView;
+
 @protocol GJShareViewDelegate <NSObject>
 
-@required;
--(void)didCancelShareAtShareView:(GJShareView *)shareView;
-
+@optional;
+- (void)didHideShareView:(GJShareView *)shareView;
 @end
-@interface GJShareView : UIView
 
-+ (instancetype)showShareView;
-+ (BOOL)hideShareView;
+@interface GJShareView : UIControl
+/** 标题 */
+@property (nonatomic, copy) NSString *title;
+/** 链接 */
+@property (nonatomic, copy) NSString *link;
+/** 描述文字 */
+@property (nonatomic, copy) NSString *desc;
+/** 本地图片缩略图->默认选择 */
+@property (nonatomic, strong) UIImage *localImage;
+/** 网络图片缩略图->只支持qq */
+@property (nonatomic, copy) NSString *imageUrlPath;
 
 @property (nonatomic, assign) id<GJShareViewDelegate> delegate;
+/** 快速创建 */
++ (instancetype)shareViewWithTitle:(NSString *)title link:(NSString *)link desc:(NSString *)desc;
 
-@property (nonatomic, copy) NSString *shareTitle;
-@property (nonatomic, copy) NSString *shareLink;
-@property (nonatomic, copy) NSString *shareDesc;
-
-//本地图片缩略图->默认选择
-@property (nonatomic, strong) UIImage *defaultLocalImage;
-//网络图片缩略图->只支持qq
-@property (nonatomic, copy) NSString *netWorkImageUrl;
+- (BOOL)hideShareView;
 
 @end

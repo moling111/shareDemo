@@ -18,18 +18,15 @@ extern CGFloat btnTitleH;
 
 @implementation GJShareContentView
 
--(instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        
         [self setUpData];
         [self setUpViews];
     }
     return self;
 }
 
--(void)setUpData{
-    
+- (void)setUpData {
     NSURL *weixinUrl = [NSURL URLWithString:@"weixin://"];
     NSURL *tencentUrl = [NSURL URLWithString:@"mqq://"];
     NSURL *weiboUrl = [NSURL URLWithString:@"sinaweibo://"];
@@ -55,8 +52,8 @@ extern CGFloat btnTitleH;
     NSAssert(self.dataArray.count == shareCount, @"分享数组与分享个数不一样");
 }
 
--(void)setUpViews{
-    self.backgroundColor = SHARE_COLOR(220, 220, 220 ,1);
+- (void)setUpViews {
+    self.backgroundColor = [UIColor colorWithRed:(220)/255.0 green:(220)/255.0 blue:(220)/255.0 alpha:1];
     
     CGFloat labelX = padding;
     CGFloat labelY = 0;
@@ -101,8 +98,7 @@ extern CGFloat btnTitleH;
     [self addSubview:cancelBtn];
 }
 
--(void)cancelBtnClick:(UIButton *)sender
-{
+- (void)cancelBtnClick:(UIButton *)sender {
     if (self.cancelBlock) {
         self.cancelBlock();
     }

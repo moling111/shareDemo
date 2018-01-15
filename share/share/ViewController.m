@@ -24,19 +24,9 @@
     self.navigationItem.rightBarButtonItem = baritem;
 }
 
--(void)didCancelShareAtShareView:(GJShareView *)shareView
-{
-    [GJShareView hideShareView];
+- (void)shareClick {
+    [GJShareView shareViewWithTitle:@"百度一下" link:@"http://www.baidu.com" desc:@"百度一下"];
 }
-
--(void)shareClick {
-    GJShareView *shareView = [GJShareView showShareView];
-    shareView.delegate = self;
-    shareView.shareTitle = @"百度一下";
-    shareView.shareLink = @"http://www.baidu.com";
-    shareView.shareDesc = @"百度一下";
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
