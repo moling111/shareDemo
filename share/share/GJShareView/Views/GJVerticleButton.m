@@ -36,8 +36,4 @@ CGFloat btnTitleH = 30;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 
--(void)dealloc {
-    NSLog(@"__func__-------%s",__func__);
-}
-
 @end

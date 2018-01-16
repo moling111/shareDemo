@@ -107,12 +107,12 @@ extern CGFloat btnTitleH;
     switch (itemType) {
         case GJSHARE_ITEM_TYPE_TO_WEIXIN:
         {
-            [self shareToWXBaseWityType:GJSHARE_ITEM_TYPE_TO_WEIXIN];
+            [self shareToWXBaseWithType:GJSHARE_ITEM_TYPE_TO_WEIXIN];
         }
             break;
         case GJSHARE_ITEM_TYPE_TO_CIRCLE:
         {
-            [self shareToWXBaseWityType:GJSHARE_ITEM_TYPE_TO_CIRCLE];
+            [self shareToWXBaseWithType:GJSHARE_ITEM_TYPE_TO_CIRCLE];
         }
             break;
         case GJSHARE_ITEM_TYPE_TO_QQ:
@@ -136,7 +136,7 @@ extern CGFloat btnTitleH;
 }
 
 #pragma mark --- 分享微信基类
-- (void)shareToWXBaseWityType:(GJSHARE_ITEM_TYPE)type {
+- (void)shareToWXBaseWithType:(GJSHARE_ITEM_TYPE)type {
     GJShareWeixinManager *manager = [GJShareWeixinManager sharedManager];
     manager.titleStr = self.title;
     manager.linkStr = self.link;
